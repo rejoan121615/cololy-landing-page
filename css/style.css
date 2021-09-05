@@ -56,8 +56,27 @@ p.para {
 .btn__style {
   position: relative;
   border-radius: 5px;
-  box-shadow: 5px 5px 0px #855959;
   font-weight: bold;
+  background: -webkit-linear-gradient(34deg, #6571e9 0%, #c928f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .btn__style {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn__style {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn__style {
+    font-size: 33px;
+  }
 }
 
 #header {

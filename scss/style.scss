@@ -75,8 +75,21 @@ p.para {
 .btn__style {
     position: relative;
     border-radius: 5px;
-    box-shadow: 5px 5px 0px #855959;
     font-weight: bold;
+    background: -webkit-linear-gradient(34deg, #6571e9 0%, #c928f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    letter-spacing: 5px;
+    @include resp($md) {
+        font-size: 25px;
+    }
+    @include resp ($xl) {
+        font-size: 30px;
+    }
+    @include resp ($xxl) {
+        font-size: 33px;
+    }
 }
 
 // header section
