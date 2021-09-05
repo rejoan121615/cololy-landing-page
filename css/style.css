@@ -43,6 +43,11 @@ p.para {
   }
 }
 
+.para {
+  font-size: calc(16px + (19 - 16) * ((100vw - 300px) / (1600 - 300)));
+  color: white;
+}
+
 .para__sm {
   font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: #868686 !important;
@@ -298,6 +303,27 @@ main .top__section a {
     height: 2rem;
     background-size: 1.9rem;
   }
+}
+
+#links .list-group .link__list {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#links .list-group .icon {
+  color: white;
+  font-size: 25px;
+  margin-right: 25px;
+}
+#links .list-group .icon:last-child {
+  margin-right: 0px;
+}
+#links .start__min {
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid white;
+  width: 180px;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
