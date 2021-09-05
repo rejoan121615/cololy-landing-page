@@ -54,6 +54,11 @@ p.para {
     }
 }
 
+.para__sm {
+    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: rgb(134, 134, 134)!important;
+}
+
 .btn__style {
     position: relative;
     border-radius: 5px;
@@ -175,4 +180,35 @@ main {
     }
 }
 
+
+// early adopter section 
+#early__adopter {
+    .card__list {
+        .card {
+            cursor: pointer;
+            margin-bottom: 25px;
+            background-color: #161515;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border: 1px solid lighten($color: #000000, $amount: 50);
+            transition: box-shadow 0.5s;
+            // hover effect 
+            &:hover {
+                box-shadow: -2px -2px 10px white, 2px 2px 10px white;
+            }
+            @include resp($sm) {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            @include resp ($xl) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            h5 {
+                font-weight: bold;
+                  font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+            }
+        }
+    }
+}
 
