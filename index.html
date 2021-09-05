@@ -1,358 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap/bootstrapCustom.width.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!-- header section  -->
-    <header id="header" class="w-xs-100 bg-dark">
-        <div class="container-fluid py-3 py-md-4 d-flex justify-content-between align-items-center">
-            <!-- brand logo  -->
-            <a class="brand" href="">
-                <img src="./img/brand__logo.png" alt="brand logo">
-            </a>
-            <!-- links and social links  -->
-            <div class="icon__social__links w-xs-70 w-lg-60 w-xl-50 w-xxl-45">
-                <ul class="mb-0 p-0 d-md-flex justify-content-between align-items-center">
-                    <li class="d-none d-md-block">
-                        <a class="text-uppercase text-center text-white" href="">about</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/bootstrapCustom.width.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- header section  -->
+        <header id="header" class="w-xs-100 bg-dark">
+            <div
+                class="
+                    container-fluid
+                    py-3 py-md-4
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                "
+            >
+                <!-- brand logo  -->
+                <a class="brand" href="">
+                    <img src="./img/brand__logo.png" alt="brand logo" />
+                </a>
+                <!-- links and social links  -->
+                <div
+                    class="icon__social__links w-xs-70 w-lg-60 w-xl-50 w-xxl-45"
+                >
+                    <ul
+                        class="
+                            mb-0
+                            p-0
+                            d-md-flex
+                            justify-content-between
+                            align-items-center
+                        "
+                    >
+                        <li class="d-none d-md-block">
+                            <a
+                                class="text-uppercase text-center text-white"
+                                href=""
+                                >about</a
+                            >
+                        </li>
+                        <li class="d-none d-md-block">
+                            <a
+                                class="text-uppercase text-center text-white"
+                                href=""
+                                >roadmap</a
+                            >
+                        </li>
+                        <li class="d-none d-md-block">
+                            <a
+                                class="text-uppercase text-center text-white"
+                                href=""
+                                >team</a
+                            >
+                        </li>
+                        <li class="d-none d-md-block">
+                            <a
+                                class="text-uppercase text-center text-white"
+                                href=""
+                                >faq</a
+                            >
+                        </li>
+                        <!-- social btns  -->
+                        <li class="social__btns clearfix">
+                            <ul
+                                class="
+                                    social__wrap
+                                    d-flex
+                                    justify-content-between
+                                "
+                            >
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                        ><i class="fab fa-discord"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- main section  -->
+        <main>
+            <!-- slider section  -->
+            <div class="slider__container">
+                <div
+                    id="carousel"
+                    class="carousel slide carousel-fade"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-inner">
+                        <div
+                            class="carousel-item active text-center"
+                            data-bs-interval="2000"
+                        >
+                            <img
+                                class="d-inline-block"
+                                src="./img/slider__gif__img/man__character.gif"
+                                class="d-block"
+                                alt="slider image"
+                            />
+                        </div>
+                        <div
+                            class="carousel-item text-center"
+                            data-bs-interval="2000"
+                        >
+                            <img
+                                class="d-inline-block"
+                                src="./img/slider__gif__img/woman_character.gif"
+                                class="d-block"
+                                alt="slider image"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- article section  -->
+            <div class="top__section d-none">
+                <div class="text__wrap">
+                    <h1 class="text-center text-white">Colonists</h1>
+                    <p class="text-center text-white">
+                        Official NFT Collection Available Now
+                    </p>
+                    <a
+                        class="text-center d-block text-primary text-bold"
+                        href=""
+                        >Collect right now</a
+                    >
+                </div>
+            </div>
+        </main>
+
+        <!-- 2nd section  -->
+        <section>
+            <div class="container border-bottom">
+                <div class="row justify-content-between align-items-center">
+                    <!-- right side  -->
+                    <div
+                        class="col-12 col-lg-6 right__side order-1 pt-5 pt-lg-0"
+                    >
+                        <h1 class="title mb-3 mb-lg-4">Colonist NFTs</h1>
+                        <p class="para">
+                            Colonists are an NFT collection of 25,000 unique,
+                            programmatically generated space animals that are
+                            redeemable for their in-game playable character and
+                            cosmetic items in our upcoming MMO on the
+                            blockchain.
+                        </p>
+                        <p class="para">
+                            They come in 5 different species, with a hard-capped
+                            supply of 5,000 per species. Each species is dropped
+                            one by one, and is only available to mint once the
+                            previously dropped species has sold out.
+                        </p>
+                        <p class="para">
+                            (The whole collection is dropping early September
+                            2021)
+                        </p>
+                        <div
+                            class="
+                                btn__style
+                                text-white text-center
+                                border
+                                mt-5
+                                p-2
+                            "
+                        >
+                            DIGITAL COLLECTIBLES
+                        </div>
+                    </div>
+                    <!-- left side  -->
+                    <div class="col-12 col-lg-5 left__side order-0 order-lg-3">
+                        <div
+                            id="colonist__carousel"
+                            class="carousel slide carousel-fade"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="./img/sm slider/one.png"
+                                        class="d-block w-100"
+                                        alt="slider image"
+                                        data-bs-interval="750"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./img/sm slider/two.png"
+                                        class="d-block w-100"
+                                        alt="slider image"
+                                        data-bs-interval="750"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./img/sm slider/three.png"
+                                        class="d-block w-100"
+                                        alt="slider image"
+                                        data-bs-interval="750"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3rd section  -->
+        <section>
+            <div class="container border-bottom">
+                <div class="row justify-content-between align-items-center">
+                    <!-- right side  -->
+                    <div
+                        class="col-12 col-lg-6 right__side order-1 pt-5 pt-lg-0"
+                    >
+                        <h1 class="title mb-3 mb-lg-4">Colony Online</h1>
+                        <p class="para">
+                            Colony Online is a social MMO (Metaverse) on the
+                            blockchain where all playable characters and in-game
+                            cosmetic items are NFTs.
+                        </p>
+                        <p class="para">
+                            The game takes place on an alternate-reality Moon
+                            Colony, where a society of randomly generated space
+                            animals (called Colonists) have colonized the moon
+                            and turned it into their very own social playground
+                            for chic materialism, party lifestyle, and moon
+                            mining.
+                        </p>
+                        <p class="para">
+                            This world will have its very own cryptocurrency to
+                            fuel an economy of in-game item ownership on the
+                            blockchain.
+                        </p>
+                        <div
+                            class="
+                                btn__style
+                                text-white text-center
+                                border
+                                mt-5
+                                p-2
+                            "
+                        >
+                            More info coming soon.
+                        </div>
+                    </div>
+                    <!-- left side  -->
+                    <div class="col-12 col-lg-5 left__side order-0">
+                        <div
+                            id="colonist__carousel"
+                            class="carousel slide carousel-fade"
+                            data-bs-ride="carousel"
+                        >
+                            <img
+                                class="w-100"
+                                src="./img/character set.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4th section  -->
+        <section id="early__adopter">
+            <div class="container border-bottom">
+                <div>
+                    <h1 class="title text-capitalize text-center">
+                        welcome, early adopters
+                    </h1>
+                    <p
+                        class="
+                            para
+                            text-center
+                            w-xs-100
+                            mx-auto
+                            w-sm-70 w-lg-60 w-xxl-50
+                        "
+                    >
+                        We have big plans for those who buy Colonists before the
+                        official release of Colony Online. We listed a few below
+                        for those who are interested.
+                    </p>
+                </div>
+                <!-- card list  -->
+                <div
+                    class="
+                        card__list
+                        row
+                        justify-content-center justify-content-md-between
+                        mt-5
+                    "
+                >
+                    <!-- first card  -->
+                    <div class="card w-xs-90 w-md-48 w-xl-23">
+                        <div class="card-body">
+                            <h5 class="text-white card-title">
+                                Early Game Access
+                            </h5>
+                            <p class="text-white card-text para__sm">
+                                Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- first card  -->
+                    <div class="card w-xs-90 w-md-48 w-xl-23">
+                        <div class="card-body">
+                            <h5 class="text-white card-title">
+                                Members Only Community
+                            </h5>
+                            <p class="text-white card-text para__sm">
+                                Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- first card  -->
+                    <div class="card w-xs-90 w-md-48 w-xl-23">
+                        <div class="card-body">
+                            <h5 class="text-white card-title">
+                                Unique NFT You Truly Own
+                            </h5>
+                            <p class="text-white card-text para__sm">
+                                Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- first card  -->
+                    <div class="card w-xs-90 w-md-48 w-xl-23">
+                        <div class="card-body">
+                            <h5 class="text-white card-title">
+                                Special Utility for Holders
+                            </h5>
+                            <p class="text-white card-text para__sm">
+                                Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 2021 roadmap section  -->
+        <section id="roadmap">
+            <div class="container border-bottom">
+                <div>
+                    <h1 class="title text-center text-capitalize">
+                        2021 roadmap
+                    </h1>
+                    <p
+                        class="
+                            para
+                            text-center
+                            w-xs-100
+                            mx-auto
+                            w-sm-70 w-xxl-65
+                            mt-3
+                        "
+                    >
+                        Here is what to expect after all 25,000 Colonists are
+                        sold through. The % on the roadmap does not mean the %
+                        of Colonists sold, but rather the % of our roadmap being
+                        complete.
+                    </p>
+                </div>
+                <!-- cards section  -->
+                <ul class="list-group mt-4 mt-lg-5 w-xl-80 mx-xl-auto">
+                    <li
+                        class="
+                            list-group-item
+                            d-flex
+                            align-items-center
+                            mb-4 mb-lg-5
+                            rounded
+                        "
+                    >
+                        <h3 class="text-success mb-0 me-3 me-lg-4">20%</h3>
+                        <div>
+                            We will airdrop Colonist holders species specific
+                            concept art NFTs for different regions of the game
+                            map (one per wallet)
+                        </div>
                     </li>
-                    <li class="d-none d-md-block">
-                        <a class="text-uppercase text-center text-white" href="">roadmap</a>
+                    <li
+                        class="
+                            list-group-item
+                            d-flex
+                            align-items-center
+                            mb-4 mb-lg-5
+                            rounded
+                        "
+                    >
+                        <h3 class="text-success mb-0 me-3 me-lg-4">40%</h3>
+                        <div>
+                            We introduce trait re-rolling, where you will be
+                            able to re-roll a singular trait on your Colonist
+                            for .0125 ETH with a maximum of 3 re-rolls per
+                            Colonist.
+                        </div>
                     </li>
-                    <li class="d-none d-md-block">  
-                        <a class="text-uppercase text-center text-white" href="">team</a>
+                    <li
+                        class="
+                            list-group-item
+                            d-flex
+                            align-items-center
+                            mb-4 mb-lg-5
+                            rounded
+                        "
+                    >
+                        <h3 class="text-success mb-0 me-3 me-lg-4">60%</h3>
+                        <div>
+                            We open our limited quantity merch store on our
+                            website which is only accessible for verified owners
+                            of Colonists (Metamask sign in)
+                        </div>
                     </li>
-                    <li class="d-none d-md-block">  
-                        <a class="text-uppercase text-center text-white" href="">faq</a>
+                    <li
+                        class="
+                            list-group-item
+                            d-flex
+                            align-items-center
+                            mb-4 mb-lg-5
+                            rounded
+                        "
+                    >
+                        <h3 class="text-success mb-0 me-3 me-lg-4">80%</h3>
+                        <div>
+                            For 72 hours, holders of Colonists will be able to
+                            mint a “Companion” which is essentially a pet with
+                            future utility in Colony Online. (one per Colonist)
+                        </div>
                     </li>
-                    <!-- social btns  -->
-                    <li class="social__btns clearfix">
-                        <ul class="social__wrap d-flex justify-content-between">
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fab fa-discord"></i></a></li>
-                        </ul>
+                    <li
+                        class="
+                            list-group-item
+                            d-flex
+                            align-items-center
+                            mb-4 mb-lg-5
+                            rounded
+                        "
+                    >
+                        <h3 class="text-success mb-0 me-3 me-lg-4">100%</h3>
+                        <div>
+                            Those who hold at least one Colonist per species
+                            (all 5) will receive a powerup boost for one
+                            super-charged re-roll that increases their chances
+                            of rolling a legendary item.
+                        </div>
                     </li>
                 </ul>
+                <!-- paragraph  -->
+                <p class="para text-center w-lg-90 w-xxl-80 mx-xxl-auto">
+                    After we successfully deliver on every roadmap item; We
+                    continue full-swing game development of Colony Online (our
+                    MMO on the blockchain) and releasing early access to
+                    Colonist holders in 2022.
+                </p>
             </div>
-        </div>
-    </header>
-    <!-- main section  -->
-    <main>
-        <!-- slider section  -->
-        <div class="slider__container">
-            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active text-center" data-bs-interval="2000">
-                        <img class="d-inline-block" src="./img/slider__gif__img/man__character.gif" class="d-block" alt="slider image">
+        </section>
+        <!-- team section  -->
+        <section id="team">
+            <div class="container border-bottom">
+                <div class="sec__header">
+                    <h1 class="title text-center text-capitalize">
+                        meet the team
+                    </h1>
+                    <p
+                        class="
+                            para
+                            text-center
+                            w-xs-100
+                            mx-auto
+                            w-sm-70 w-xxl-65
+                            mt-3
+                        "
+                    >
+                        Our core team has professional game production
+                        experience at EA Games and Maxis, as well as blockchain
+                        and ERC-20 token development for large private banks.
+                    </p>
+                </div>
+                <!-- team list  -->
+                <div
+                    class="
+                        team__member
+                        card__list
+                        d-flex
+                        flex-wrap
+                        justify-content-center justify-content-sm-between
+                        mt-4 mt-lg-5
+                    "
+                >
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="carousel-item text-center" data-bs-interval="2000">
-                        <img class="d-inline-block" src="./img/slider__gif__img/woman_character.gif" class="d-block" alt="slider image">
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- cards  -->
+                    <div
+                        class="
+                            card
+                            w-xs-90 w-sm-48 w-lg-40
+                            d-flex
+                            flex-column
+                            align-items-center
+                            mb-4 mb-lg-5
+                        "
+                    >
+                        <div class="img__wrap">
+                            <img
+                                src="./img/character image/raphael.png"
+                                class="card-img-top"
+                                alt="card image"
+                            />
+                        </div>
+                        <div class="card-body p-0">
+                            <h5 class="card-title text-center text-white">
+                                Saimon Baptea
+                            </h5>
+                            <h6 class="text-center text-capitalize text-white">
+                                founder
+                            </h6>
+                            <p
+                                class="
+                                    card-text
+                                    text-center
+                                    w-xs-95 w-sm-100
+                                    mx-auto
+                                "
+                            >
+                                Product Development/Creative Director/Marketing
+                            </p>
+                            <a
+                                href=""
+                                class="text-white d-block mx-auto"
+                                style="width: 35px"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- article section  -->
-        <div class="top__section">
-            <div class="text__wrap">
-                <h1 class="text-center text-white">Colonists</h1>
-                <p class="text-center text-white">Official NFT Collection Available Now</p>
-                <a class="text-center d-block text-primary text-bold" href="">Collect right now</a>
-            </div>
-        </div>
-    </main>
+        </section>
+        <!-- faq section  -->
+        <section id="faq">
+            <div class="container">
+                <div class="sec__header">
+                    <h1 class="title text-center text-capitalize">faq</h1>
+                    <p
+                        class="
+                            para
+                            text-center
+                            w-xs-100
+                            mx-auto
+                            w-sm-70 w-xxl-65
+                            mt-3
+                        "
+                    >
+                        We answered some frequently asked questions below.
+                    </p>
+                </div>
+                <!-- accordion  -->
+                <div class="accordion list mt-4 mt-lg-5">
+                    <div class="row">
+                        <div
+                            class="accordion accordion-flush d-flex flex-column justify-content-lg-between"
+                            id="accordionFlushExample"
+                        >
+                        <!-- accordion item  -->
+                            <div class="accordion-item mb-4 mb-md-5 border-0">
+                                <h2
+                                    class="accordion-header bg-dark"
+                                    id="flush-headingOne"
+                                >  
+                                    <button
+                                        class="accordion-button collapsed bg-dark text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne"
+                                    >
+                                        Why 25,000 NFTs?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseOne"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne"
+                                    data-bs-parent="#accordionFlushExample"
+                                >
+                                    <div class="accordion-body bg-dark border-top">
+                                        <p class="para">
+                                            Our thesis that total unique owners is one of the biggest value drivers for an NFT project moving forward. As more people enter the collectibles NFT market, we want to provide an accessible collection that over time can grow accommodate to a large amount of unique holders, and still be a limited quantity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- accordion item  -->
+                            <div class="accordion-item mb-4 mb-md-5 border-0">
+                                <h2
+                                    class="accordion-header bg-dark"
+                                    id="flush-headingTwo"
+                                >  
+                                    <button
+                                        class="accordion-button collapsed bg-dark text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo"
+                                    >
+                                        What blockchain is it on?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo"
+                                    data-bs-parent="#accordionFlushExample"
+                                >
+                                    <div class="accordion-body bg-dark border-top">
+                                        <p class="para">
+                                            This base collection of 25,000 Colonists are ERC-721 tokens on the Ethereum blockchain. The exact blockchain we are building our MMO (Colony Online) on is undecided as we are exploring the most efficient option.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- accordion item  -->
+                            <div class="accordion-item mb-4 mb-md-5 border-0">
+                                <h2
+                                    class="accordion-header bg-dark"
+                                    id="flush-headingTwo"
+                                >  
+                                    <button
+                                        class="accordion-button collapsed bg-dark text-white"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree"
+                                    >
+                                        How does trait re-rolling work?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="flush-collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree"
+                                    data-bs-parent="#accordionFlushExample"
+                                >
+                                    <div class="accordion-body bg-dark border-top">
+                                        <p class="para">
+                                            If your Colonist has a background color you don't like, re-rolling will allow you to re-randomize that single layer while also removing the chance of getting the same color again. This also is the same logic for re-rolling other traits like hats, eyes, fur color etc; If your Colonist does not have a hat equipped, you will not be able to re-roll that trait because you don't inhibit that trait.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- 2nd section  -->
-    <section>
-        <div class="container border-bottom">
-            <div class="row justify-content-between align-items-center">
-                <!-- right side  -->
-                <div class="col-12 col-lg-6 right__side order-1 pt-5 pt-lg-0">
-                    <h1 class="title mb-3 mb-lg-4">Colonist NFTs</h1>
-                    <p class="para">Colonists are an NFT collection of 25,000 unique, programmatically generated space animals that are redeemable for their in-game playable character and cosmetic items in our upcoming MMO on the blockchain.</p>
-                    <p class="para">They come in 5 different species, with a hard-capped supply of 5,000 per species. Each species is dropped one by one, and is only available to mint once the previously dropped species has sold out.</p>
-                    <p class="para">(The whole collection is dropping early September 2021)</p>
-                    <div class="btn__style text-white text-center border mt-5 p-2">DIGITAL COLLECTIBLES</div>
-                </div>
-                <!-- left side  -->
-                <div class="col-12 col-lg-5 left__side order-0 order-lg-3">
-                    <div id="colonist__carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                            <img src="./img/sm slider/one.png" class="d-block w-100" alt="slider image" data-bs-interval="750">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/sm slider/two.png" class="d-block w-100" alt="slider image" data-bs-interval="750">
-                            </div>
-                            <div class="carousel-item">
-                            <img src="./img/sm slider/three.png" class="d-block w-100" alt="slider image" data-bs-interval="750">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 3rd section  -->
-    <section>
-        <div class="container border-bottom">
-            <div class="row justify-content-between align-items-center">
-                <!-- right side  -->
-                <div class="col-12 col-lg-6 right__side order-1 pt-5 pt-lg-0">
-                    <h1 class="title mb-3 mb-lg-4">Colony Online</h1>
-                    <p class="para">Colony Online is a social MMO (Metaverse) on the blockchain where all playable characters and in-game cosmetic items are NFTs.</p>
-                    <p class="para">The game takes place on an alternate-reality Moon Colony, where a society of randomly generated space animals (called Colonists) have colonized the moon and turned it into their very own social playground for chic materialism, party lifestyle, and moon mining.</p>
-                    <p class="para">This world will have its very own cryptocurrency to fuel an economy of in-game item ownership on the blockchain.</p>
-                    <div class="btn__style text-white text-center border mt-5 p-2">More info coming soon.</div>
-                </div>
-                <!-- left side  -->
-                <div class="col-12 col-lg-5 left__side order-0">
-                    <div id="colonist__carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <img class="w-100" src="./img/character set.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 4th section  -->
-    <section id="early__adopter">
-        <div class="container border-bottom">
-            <div>
-                <h1 class="title text-capitalize text-center">welcome, early adopters</h1>
-                <p class="para text-center w-xs-100 mx-auto w-sm-70 w-lg-60 w-xxl-50">We have big plans for those who buy Colonists before the official release of Colony Online. We listed a few below for those who are interested.</p>
-            </div>
-            <!-- card list  -->
-            <div class="card__list row justify-content-center justify-content-md-between mt-5">
-                <!-- first card  -->
-                <div class="card w-xs-90 w-md-48 w-xl-23">
-                    <div class="card-body">
-                        <h5 class="text-white card-title">Early Game Access</h5>
-                        <p class="text-white card-text para__sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <!-- first card  -->
-                <div class="card w-xs-90 w-md-48 w-xl-23">
-                    <div class="card-body">
-                        <h5 class="text-white card-title">Members Only Community</h5>
-                        <p class="text-white card-text para__sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <!-- first card  -->
-                <div class="card w-xs-90 w-md-48 w-xl-23">
-                    <div class="card-body">
-                        <h5 class="text-white card-title">Unique NFT You Truly Own</h5>
-                        <p class="text-white card-text para__sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-                <!-- first card  -->
-                <div class="card w-xs-90 w-md-48 w-xl-23">
-                    <div class="card-body">
-                        <h5 class="text-white card-title">Special Utility for Holders</h5>
-                        <p class="text-white card-text para__sm">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 2021 roadmap section  -->
-    <section id="roadmap">
-        <div class="container border-bottom">
-            <div>
-                <h1 class="title text-center text-capitalize">2021 roadmap</h1>
-                <p class="para text-center w-xs-100 mx-auto w-sm-70 w-xxl-65 mt-3">Here is what to expect after all 25,000 Colonists are sold through. The % on the roadmap does not mean the % of Colonists sold, but rather the % of our roadmap being complete.</p>
-            </div>
-            <!-- cards section  -->
-            <ul class="list-group mt-4 mt-lg-5 w-xl-80 mx-xl-auto">
-                <li class="list-group-item d-flex align-items-center mb-4 mb-lg-5 rounded">
-                    <h3 class="text-success mb-0 me-3 me-lg-4">20%</h3>
-                    <div>We will airdrop Colonist holders species specific concept art NFTs for different regions of the game map (one per wallet)</div>
-                </li>
-                <li class="list-group-item d-flex align-items-center mb-4 mb-lg-5 rounded">
-                    <h3 class="text-success mb-0 me-3 me-lg-4">40%</h3>
-                    <div>We introduce trait re-rolling, where you will be able to re-roll a singular trait on your Colonist for .0125 ETH with a maximum of 3 re-rolls per Colonist.</div>
-                </li>
-                <li class="list-group-item d-flex align-items-center mb-4 mb-lg-5 rounded">
-                    <h3 class="text-success mb-0 me-3 me-lg-4">60%</h3>
-                    <div>We open our limited quantity merch store on our website which is only accessible for verified owners of Colonists (Metamask sign in)</div>
-                </li>
-                <li class="list-group-item d-flex align-items-center mb-4 mb-lg-5 rounded">
-                    <h3 class="text-success mb-0 me-3 me-lg-4">80%</h3>
-                    <div>For 72 hours, holders of Colonists will be able to mint a “Companion” which is essentially a pet with future utility in Colony Online. (one per Colonist)</div>
-                </li>
-                <li class="list-group-item d-flex align-items-center mb-4 mb-lg-5 rounded">
-                    <h3 class="text-success mb-0 me-3 me-lg-4">100%</h3>
-                    <div>Those who hold at least one Colonist per species (all 5) will receive a powerup boost for one super-charged re-roll that increases their chances of rolling a legendary item.</div>
-                </li>
-            </ul>
-            <!-- paragraph  -->
-            <p class="para text-center w-lg-90 w-xxl-80 mx-xxl-auto">After we successfully deliver on every roadmap item; We continue full-swing game development of Colony Online (our MMO on the blockchain) and releasing early access to Colonist holders in 2022.</p>
-        </div>
-    </section>
-    <!-- team section  -->
-    <section id="team">
-        <div class="container border-bottom">
-            <div class="sec__header">
-                <h1 class="title text-center text-capitalize">meet the team</h1>
-                <p class="para text-center w-xs-100 mx-auto w-sm-70 w-xxl-65 mt-3">Our core team has professional game production experience at EA Games and Maxis, as well as blockchain and ERC-20 token development for large private banks.</p>
-            </div>
-             <!-- team list  -->
-            <div class="team__member card__list d-flex flex-wrap justify-content-center justify-content-sm-between mt-4 mt-lg-5">
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- cards  -->
-                <div class="card w-xs-90 w-sm-48 w-lg-40 d-flex flex-column align-items-center mb-4 mb-lg-5">
-                    <div class="img__wrap">
-                        <img src="./img/character image/raphael.png" class="card-img-top" alt="card image">
-                    </div>
-                    <div class="card-body p-0">
-                        <h5 class="card-title text-center text-white">Saimon Baptea</h5>
-                        <h6 class="text-center text-capitalize text-white">founder</h6>
-                        <p class="card-text text-center w-xs-95 w-sm-100 mx-auto">Product Development/Creative Director/Marketing</p>
-                        <a href="" class="text-white d-block mx-auto" style="width: 35px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq section  -->
-    <section>
-        <div class="container">
-            <div class="sec__header">
-                <h1>faq</h1>
-                <p class="para">We answered some frequently asked questions below.</p>
-            </div>
-            <!-- accordion  -->
-            <div class="accordion list">
-                <div class="row">
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Accordion Item #1
-                            </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Accordion Item #2
-                            </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Accordion Item #3
-                            </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- link list section  -->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
 
+                        
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- footer section  -->
-    <footer>
-        <p class="para text-center">copyright@2021-roger venbe</p>
-    </footer>
-    <!-- js files  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-</body>
+        </section>
+        <!-- link list section  -->
+        <section>
+            <div class="container-fluid">
+                <div class="row"></div>
+            </div>
+        </section>
+        <!-- footer section  -->
+        <footer>
+            <p class="para text-center">copyright@2021-roger venbe</p>
+        </footer>
+        <!-- js files  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+            integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

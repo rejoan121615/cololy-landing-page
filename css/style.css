@@ -116,7 +116,7 @@ main {
   justify-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  max-height: 100vh;
+  max-height: 135vh;
   overflow: hidden;
 }
 main .slider__container {
@@ -263,6 +263,41 @@ main .top__section a {
 }
 #team .team__member .card:nth-child(6) .img__wrap {
   background-color: #33030b;
+}
+
+#faq .container .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+#faq .container .accordion-button {
+  font-weight: bold;
+  font-size: calc( 16px + (21 - 14) * ((100vw - 300px) / (1600 - 300)) );
+}
+#faq .container .accordion-button::after {
+  background-image: url("../img/icons/minus.png");
+  width: 1.7rem;
+  height: 1.7rem;
+  background-size: 1.65rem;
+}
+@media only screen and (min-width: 992px) {
+  #faq .container .accordion-button::after {
+    width: 2rem;
+    height: 2rem;
+    background-size: 1.9rem;
+  }
+}
+#faq .container .collapsed::after {
+  background-image: url("../img/icons/add.png");
+  width: 1.7rem;
+  height: 1.7rem;
+  background-size: 1.65rem;
+}
+@media only screen and (min-width: 992px) {
+  #faq .container .collapsed::after {
+    width: 2rem;
+    height: 2rem;
+    background-size: 1.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

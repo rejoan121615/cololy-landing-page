@@ -144,7 +144,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     // min-height: 100vh;
-    max-height: 100vh;
+    max-height: 135vh;
     overflow: hidden;
     // slider section
     .slider__container {
@@ -302,7 +302,7 @@ main {
                     }
                 }
             }
-            // sec child 
+            // sec child
             &:nth-child(2) {
                 .img__wrap {
                     background-color: #6a4c93;
@@ -326,6 +326,47 @@ main {
             &:nth-child(6) {
                 .img__wrap {
                     background-color: #33030b;
+                }
+            }
+        }
+    }
+}
+
+// faq section
+#faq {
+    .container {
+        // accordion
+        .accordion-button:focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        .accordion-button {
+            font-weight: bold;
+            font-size: calc(
+                16px + (21 - 14) * ((100vw - 300px) / (1600 - 300))
+            );
+            &::after {
+                background-image: url("../img/icons/minus.png");
+                width: 1.7rem;
+                height: 1.7rem;
+                background-size: 1.65rem;
+                @include resp($lg) {
+                    width: 2rem;
+                    height: 2rem;
+                    background-size: 1.9rem;
+                }
+            }
+        }
+        .collapsed {
+            &::after {
+                background-image: url("../img/icons/add.png");
+                width: 1.7rem;
+                height: 1.7rem;
+                background-size: 1.65rem;
+                @include resp($lg) {
+                    width: 2rem;
+                    height: 2rem;
+                    background-size: 1.9rem;
                 }
             }
         }
