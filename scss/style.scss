@@ -21,9 +21,48 @@ $xxl: 1400px;
     }
 }
 
+@mixin px ($t,$b) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+
+// common style 
+
 body {
     background-color: black;
 }
+
+.container {
+    @include px(100px, 100px);
+    @include resp($lg) {
+        @include px(150px, 150px);
+    }
+}
+
+h1.title {
+    font-weight: bold;
+    font-size: calc(30px + (65 - 30) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+p.para {
+    font-size: calc(16px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: white;
+    @media screen and (min-width: $lg) and (max-width: $xl) {
+        font-size: 16px;
+    }
+}
+
+.btn__style {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: -2px -1px 8px #f1dfdf, 2px 1px 8px #f1dfdf;
+    font-weight: bold;
+}
+
+
+
 
 // header section
 #header {

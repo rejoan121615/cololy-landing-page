@@ -8,6 +8,41 @@ body {
   background-color: black;
 }
 
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+h1.title {
+  font-weight: bold;
+  font-size: calc(30px + (65 - 30) * ((100vw - 300px) / (1600 - 300)));
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+p.para {
+  font-size: calc(16px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: white;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  p.para {
+    font-size: 16px;
+  }
+}
+
+.btn__style {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: -2px -1px 8px #f1dfdf, 2px 1px 8px #f1dfdf;
+  font-weight: bold;
+}
+
 #header {
   position: sticky;
   left: 0px;
