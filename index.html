@@ -31,25 +31,42 @@
 
     </head>
     <body>
-        <!-- header section  -->
+        <!-- header navbar  -->
         <header id="header" class="w-xs-100 bg-dark">
-            <div
-                class="
-                    container-fluid
-                    py-3 py-md-4
-                    d-flex
-                    justify-content-between
-                    align-items-center
-                "
-            >
-                <!-- brand logo  -->
-                <a class="brand" href="">
-                    <!--<img src="./img/brand__logo.png" alt="brand logo" />-->
-                </a> 
-                <!-- links and social links  -->
-                <div
-                    class="icon__social__links w-xs-70 w-lg-60 w-xl-50 w-xxl-45"
-                >
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 py-lg-4">
+                <div class="container-fluid">
+                    <!-- social btn for small screen  -->
+                    <div class="social__btns clearfix d-lg-none">
+                            <ul
+                                class="
+                                    social__wrap
+                                    d-flex
+                                    justify-content-between
+                                    mb-0
+                                "
+                            >
+                                <li>
+                                    <a href="https://twitter.com/suburbancolors"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/suburban.colors/"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/XgHhwZtKCg"
+                                        ><i class="fab fa-discord"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <!-- navbar btn  -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
                     <ul
                         class="
                             mb-0
@@ -57,53 +74,55 @@
                             d-md-flex
                             justify-content-between
                             align-items-center
+                            flex-column
+                            flex-lg-row
                         "
                     >
-                        <li class="d-none d-md-block">
+                        <li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#suburban__NFT"
                                 >about</a
                             >
                         </li>
-							<li class="d-none d-md-block">
+							<li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#plot"
                                 >plot</a
                             >
                         </li>
-						  <li class="d-none d-md-block">
+						  <li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#game"
                                 >game</a
                             >
                         </li>
-						  <li class="d-none d-md-block">
+						  <li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#rarity"
                                 >traits</a
                             >
                         </li>							
-                        <li class="d-none d-md-block">
+                        <li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#roadmap"
                                 >roadmap</a
                             >
                         </li>
-                        <li class="d-none d-md-block">
+                        <li class="nav-item">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#team"
                                 >team</a
                             >
                         </li>
-                        <li class="d-none d-md-block">
+                        <li class="nav-item me-lg-5">
                             <a
-                                class="text-uppercase text-center text-white"
+                                class="nav-link text-uppercase text-center text-white"
                                 href="#faq"
                                 >faq</a
                             >
@@ -116,7 +135,7 @@
                             > 
                         </li>-->
                         <!-- social btns  -->
-                        <li class="social__btns clearfix">
+                        <li class="social__btns clearfix d-none d-lg-block">
                             <ul
                                 class="
                                     social__wrap
@@ -142,8 +161,9 @@
                             </ul>
                         </li>
                     </ul>
+                    </div>
                 </div>
-            </div>
+                </nav>
         </header>
         <!-- main section  -->
         <div id="main_and_text_container">
