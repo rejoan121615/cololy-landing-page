@@ -127,6 +127,35 @@ p.para {
     color: white;
     font-size: 15px;
 }
+
+/* header list style  */
+#header .navbar{
+    background-color: #5C38C1!important;
+}
+
+#header .navbar ul {
+    list-style: none;
+}
+
+@media only screen and (min-width: 992px) {    
+    #header .navbar ul li .nav-link {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {    
+    #header .navbar ul li .nav-link {
+        padding-left: 22.5px;
+        padding-right: 22.5px;
+    }
+}
+@media only screen and (min-width: 1400px) {    
+    #header .navbar ul li .nav-link {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
 @media only screen and (min-width: 1400px) {
     #header .social__btns .social__wrap li a {
         font-size: 17px;
